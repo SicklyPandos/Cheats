@@ -12526,7 +12526,85 @@ addcmd('tpunanchored',{'tpua'},function(args, speaker)
             end
         end
         for i,c in pairs(Forces) do
-            c.Position = Players[v].Character.Head.Position
+         local distance = 15
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
+			wait(0.5)
+			distance += 5
+			c.Position = workspace.B0OEN.Head.CFrame.LookVector * distance
+			game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(workspace.B0OEN.Head.CFrame.LookVector * distance + Vector3.new(0,30,0))
         end
     end
 end)
