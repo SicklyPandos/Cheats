@@ -1,0 +1,58 @@
+local npcsFolder = workspace:FindFirstChild("NPCs")
+local fuse = workspace.Map:FindFirstChild("Fusebox")
+local players = game:GetService("Players")
+local humanoidpart = workspace.ServerNPCs.ServerNPC.HumanoidRootPart
+workspace.ServerNPCs.ServerNPC.HumanoidRootPart.Material = "Air" -- leave this
+game:GetService("StarterGui"):SetCore("ResetButtonCallback", true) -- just enables reset, can remove
+
+if npcsFolder then
+    for _, npc in ipairs(npcsFolder:GetChildren()) do
+        local prisoner = npc:FindFirstChild("Base")
+        if prisoner then
+            local highlight = Instance.new("Highlight")
+            highlight.Adornee = prisoner
+            highlight.FillColor = Color3.new(1, 0, 0)
+            highlight.FillTransparency = 0.7
+            highlight.OutlineColor = Color3.new(1, 0, 0)
+            highlight.OutlineTransparency = 0
+            highlight.Parent = prisoner
+            prisoner.Transparency = 0
+        end
+    end
+else
+    warn("why no npc folder :wah:")
+end
+
+if humanoidpart then
+    local highlight = Instance.new("Highlight")
+    highlight.Adornee = humanoidpart
+    highlight.FillColor = Color3.new(0.003922, 1.000000, 0.172549)
+    highlight.FillTransparency = 0.7
+    highlight.OutlineColor = Color3.new(0.003922, 1.000000, 0.172549)
+    highlight.OutlineTransparency = 0
+    highlight.Parent = humanoidpart
+    humanoidpart.Transparency = 0
+end
+
+if fuse then
+    local highlight = Instance.new("Highlight")
+    highlight.Adornee = fuse
+    highlight.FillColor = Color3.new(0.003922, 0.247059, 0.568627)
+    highlight.FillTransparency = 0.7
+    highlight.OutlineColor = Color3.new(0.003922, 0.247059, 0.568627)
+    highlight.OutlineTransparency = 0
+    highlight.Parent = fuse
+end
+
+for _, player in ipairs(players:GetPlayers()) do
+    local character = workspace:FindFirstChild(player.Name)
+    if character then
+        local highlight = Instance.new("Highlight")
+        highlight.Adornee = character
+        highlight.FillColor = Color3.new(0, 0, 1) -- Blue color
+        highlight.FillTransparency = 0.7
+        highlight.OutlineColor = Color3.new(0, 0, 1) -- Blue color
+        highlight.OutlineTransparency = 0
+        highlight.Parent = character
+    end
+end
